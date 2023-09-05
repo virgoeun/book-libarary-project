@@ -1,0 +1,10 @@
+const app = require("./app"); // exported app and then we send it to the port 
+
+// ℹ️ Sets the PORT for our app to have access to it. If no env has been set, we hard code it to 3000
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server listening on http://localhost:${PORT}`);
+});
+
+// this is the last step! (server.js)
