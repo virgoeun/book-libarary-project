@@ -33,6 +33,15 @@ app.use("/", indexRoutes);
 // const contactRoutes = require("./routes/contact.route");
 // app.use("/", contactRoutes)
 
+
+// ====================== BOOKS PROJECT =========================== //
+// we already have it
+// const index = require('./routes/index.routes');
+// app.use('/', index); 
+
+const bookRoutes = require('./routes/book.routes'); // <== import (require) book routes
+app.use('/', bookRoutes);
+
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 //should be at the end of app.js file (otherewise, it throws an error )
 // all the previews or routes fail, pass it to the middleware
